@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Edit_profile">
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/grey"
+        android:ems="10"
+        android:hint="username"
+        android:focusable="false"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/profile_pic"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/grey"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/username"
+        app:layout_constraintTop_toBottomOf="@+id/username" />
+
+    <EditText
+        android:id="@+id/firstName"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/grey"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/password"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <EditText
+        android:id="@+id/lastName"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/grey"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/firstName"
+        app:layout_constraintTop_toBottomOf="@+id/firstName" />
+
+    <EditText
+        android:id="@+id/department"
+        android:layout_width="391dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/grey"
+        android:ems="10"
+        android:hint="Department"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/lastName"
+        app:layout_constraintStart_toStartOf="@+id/profile_pic"
+        app:layout_constraintTop_toBottomOf="@+id/lastName" />
+
+    <EditText
+        android:id="@+id/position"
+        android:layout_width="392dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/grey"
+        android:ems="10"
+        android:hint="Title/Position"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/department"
+        app:layout_constraintStart_toStartOf="@+id/department"
+        app:layout_constraintTop_toBottomOf="@+id/department" />
+
+    <ImageView
+        android:id="@+id/profile_pic"
+        android:layout_width="160dp"
+        android:layout_height="164dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:onClick="add_profile_pic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/default_photo" />
+
+    <TextView
+        android:id="@+id/character_count"
+        android:layout_width="404dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/position"
+        app:layout_constraintStart_toStartOf="@+id/position"
+        app:layout_constraintTop_toBottomOf="@+id/position" />
+
+    <EditText
+        android:id="@+id/story"
+        android:layout_width="383dp"
+        android:layout_height="330dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/grey"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="Your story..."
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/character_count"
+        app:layout_constraintTop_toBottomOf="@+id/character_count" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

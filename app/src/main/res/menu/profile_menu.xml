@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/profile_delete"
+        android:icon="@android:drawable/ic_menu_manage"
+        android:title="profile_delete"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/profile_edit"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:title="profile_edit"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/leaderboard"
+        android:icon="@android:drawable/ic_menu_sort_by_size"
+        android:title="leaderboard"
+        app:showAsAction="ifRoom" />
+</menu>
